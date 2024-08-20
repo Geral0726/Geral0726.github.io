@@ -74,14 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
             // Crea un nuevo elemento HTML de tipo "li"
             const newSkill = document.createElement("li");
             newSkill.textContent = skillName;
-            skillsList.appendChild(newSkill);
+            skillsList1.appendChild(newSkill);
             selectSkillHandler(newSkill);
         }
     });
 
     document.getElementById("deleteSkill1").addEventListener("click", () => {
         if (selectedSkill) {
-            skillsList.removeChild(selectedSkill);
+            skillsList1.removeChild(selectedSkill);
             selectedSkill = null;
         } else {
             alert("No ha seleccionado ningún skill");
