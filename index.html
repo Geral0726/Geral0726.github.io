@@ -57,6 +57,13 @@
             font-weight: normal;
             color: #888;
         }
+
+        .button-container {
+            display: flex; /* Usa flexbox para alinear los botones */
+            gap: 10px; /* Espacio entre los botones */
+            margin-top: 10px;
+            flex-direction: column; /* Alinea los botones en columna */
+        }
     </style>
 </head>
 <body>
@@ -74,6 +81,15 @@
                     <div class="grid-item">
                         <p>Tecnología en Sistemas de Información</p>
                     </div>
+                    <ul id="skillsList">
+                        <!--La lista empieza sin elementos-->
+                    </ul>
+                    
+                    <div class="button-container">
+                        <button id="addSkill">Agregar experiencia académica</button>
+                        <button id="editSkill">Editar experiencia académica</button>
+                        <button id="deleteSkill">Borrar experiencia académica</button>
+                    </div>
                 </div>
             </div>
             <div class="section">
@@ -83,6 +99,16 @@
                     <li>Auxiliar Administrativo</li>
                 </ul>
             </div>
+            <div class="section">
+                <h2>Skills</h2>
+                <ul id="skillsList1">
+                    <!--La lista empieza sin elementos-->
+                </ul>
+                <button id="addSkill1">Agregar Skill</button>
+                <button id="editSkill1">Editar Skill</button>
+                <button id="deleteSkill1">Borrar Skill</button>
+                </div>
+            </div>
             <div class="contact-info">
                 <h2>Información de Contacto</h2>
                 <p>Teléfono: 3135609876</p>
@@ -90,6 +116,8 @@
             </div>
         </div>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
+
 
